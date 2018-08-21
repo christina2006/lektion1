@@ -4,19 +4,51 @@
  **/
 
 /* TRANSISTION: The animation code */
-@keyframes andersAnd {
-    from {
-			background-color: pink;
-			font-size: 2rem;
-			width: 300px;
-		}
-    to {
-			background-color: yellow;
-			font-size: 4rem;
-			width: 500px;
-		}
+
+@keyframes ghosty {
+    0% {
+        left: 10px;
+        top: 60px;
+    }
+    25% {
+        left: 20%;
+        top: 10px;
+    }
+    50% {
+        left: 20%;
+        top: 40px;
+    }
+    75% {
+        left: 0px;
+        top: 400px;
+    }
+    100% {
+        left: 60px;
+        top: 6
+            10px;
+    }
 }
 
+.ghost {
+  animation-name: ghosty; /* Safari 4.0 - 8.0 */
+  position: relative;
+    animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
 @keyframes bedstemorAnd {
     0%   {
 			background-color: red;
@@ -47,6 +79,3 @@ p {
 	animation-name: bedstemorAnd;
 	animation-duration: 2s;
 }
-
-
-
